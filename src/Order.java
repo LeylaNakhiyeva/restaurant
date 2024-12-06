@@ -1,16 +1,13 @@
 import java.util.Scanner;
 
 public class Order {
-    private String customerName;
-    public void setCustomerName(String name){
-        this.customerName=name;
-    }
-    public String getCustomerName(){
-        return customerName;
-    }
+    private Meal [] order= new Meal[5];
+    private int cariIndex=0;
+
+
     public static void enterCustomerName(){
         Scanner sc= new Scanner(System.in);
-        Order customer= new Order();
+        Customer customer= new Customer();
         customer.setCustomerName(sc.next());
     }
     public static void order(String name){
