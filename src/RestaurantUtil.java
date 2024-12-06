@@ -4,7 +4,7 @@ public class RestaurantUtil {
 
     }
 
-    public static void printAllMeals() {
+    public static void printMeals() {
         for (int i = 0; i < Restaurant.mealCount; i++) {
             Meal meal = Restaurant.meals[i];
             System.out.println(i + 1 + "-ci yemek: " + meal.getName());
